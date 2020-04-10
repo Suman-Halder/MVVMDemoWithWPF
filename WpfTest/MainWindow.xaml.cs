@@ -27,6 +27,7 @@ namespace WpfTest
 
         public MainWindow()
         {
+            //Test
             InitializeComponent();
             //cmbColors.ItemsSource = Colours;
             //this.DataContext = this;
