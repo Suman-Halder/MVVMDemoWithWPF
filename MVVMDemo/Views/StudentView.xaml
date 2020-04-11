@@ -27,7 +27,10 @@
     </UserControl.Resources>
 
     <Grid>
-        <ListBox ItemsSource="{Binding Students}" />
+        <StackPanel Orientation="Horizontal">
+            <ListBox ItemsSource="{Binding Students}" SelectedItem="{Binding SelectedStudent}"/>
+            <Button Content="Delete" Command="{Binding DeleteCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"></Button>
+        </StackPanel>        
     </Grid>
     
     <!--<UserControl.DataContext>
